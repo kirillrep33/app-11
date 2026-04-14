@@ -98,7 +98,7 @@ private struct SteakCustomTabBar: View {
             .frame(height: barHeight)
             .contentShape(Rectangle())
         }
-        .buttonStyle(.plain)
+        .buttonStyle(SteakSoundPlainButtonStyle())
     }
 }
 
@@ -132,6 +132,7 @@ struct MainView: View {
     @State private var logRoute: LogTabRoute = .newSteak
     /// `-1` until measured from key window (avoids SwiftUI keyboard-inflated `GeometryReader.safeAreaInsets`).
     @State private var keyWindowBottomInset: CGFloat = -1
+    @State private var didInstallGlobalButtonSound = false
 
     var body: some View {
         ZStack {
@@ -222,6 +223,11 @@ struct MainView: View {
             if newTab != .log {
                 logRoute = .newSteak
             }
+        }
+        .onAppear {
+            guard !didInstallGlobalButtonSound else { return }
+            didInstallGlobalButtonSound = true
+            SteakGlobalButtonSound.installOnce()
         }
     }
 }

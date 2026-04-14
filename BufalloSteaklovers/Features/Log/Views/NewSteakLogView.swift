@@ -97,7 +97,7 @@ struct NewSteakLogView: View {
                                 .strokeBorder(Color(steakHex: "A1887F"), lineWidth: max(fpScale(0.3, scale), 0.5))
                         )
                     }
-                    .buttonStyle(.plain)
+                    .buttonStyle(SteakSoundPlainButtonStyle())
                 }
                 .padding(.top, fpScale(20, scale))
 
@@ -201,7 +201,7 @@ struct NewSteakLogView: View {
                 }
             }
         }
-        .buttonStyle(.plain)
+        .buttonStyle(SteakSoundPlainButtonStyle())
     }
 
     private var logDonenessSummaryCard: some View {
@@ -256,7 +256,7 @@ struct NewSteakLogView: View {
                         .font(.system(size: fpScale(12, scale), weight: .semibold))
                         .foregroundStyle(Color.white)
                 }
-                .buttonStyle(.plain)
+                .buttonStyle(SteakSoundPlainButtonStyle())
             }
             .padding(.horizontal, fpScale(12, scale))
             .padding(.top, fpScale(14, scale))
@@ -278,7 +278,7 @@ struct NewSteakLogView: View {
                                 .frame(minHeight: fpScale(16, scale), alignment: .leading)
                                 .contentShape(Rectangle())
                         }
-                        .buttonStyle(.plain)
+                        .buttonStyle(SteakSoundPlainButtonStyle())
                     }
                 }
                 .padding(.horizontal, fpScale(12, scale))

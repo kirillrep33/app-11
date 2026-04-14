@@ -32,7 +32,7 @@ struct FullScreenSteakPhotoView: View {
                                 .font(.system(size: fpScale(16, scale), weight: .semibold))
                                 .foregroundStyle(Color(steakHex: "FF5722"))
                         }
-                        .buttonStyle(.plain)
+                        .buttonStyle(SteakSoundPlainButtonStyle())
                         Spacer(minLength: 0)
                     }
                     .padding(.horizontal, fpScale(24, scale))
@@ -78,7 +78,7 @@ struct FullScreenSteakPhotoView: View {
                                     .background(Color(steakHex: "FF5722"))
                                     .clipShape(Capsule())
                             }
-                            .buttonStyle(.plain)
+                            .buttonStyle(SteakSoundPlainButtonStyle())
                         }
 
                         HStack(spacing: fpScale(12, scale)) {
@@ -128,7 +128,7 @@ struct FullScreenSteakPhotoView: View {
                     .strokeBorder(Color(steakHex: "A1887F"), lineWidth: max(0.5, fpScale(0.5, scale)))
             )
         }
-        .buttonStyle(.plain)
+        .buttonStyle(SteakSoundPlainButtonStyle())
     }
 }
 

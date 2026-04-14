@@ -6,8 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		52CB3A5D2F8E559900C793D6 /* button.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 52CB3A5C2F8E559900C793D6 /* button.mp3 */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		52239DCE2F8D170700FC67EE /* BufalloSteaklovers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BufalloSteaklovers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CB3A5C2F8E559900C793D6 /* button.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -34,6 +39,7 @@
 			children = (
 				52239DD02F8D170700FC67EE /* BufalloSteaklovers */,
 				52239DCF2F8D170700FC67EE /* Products */,
+				52CB3A5C2F8E559900C793D6 /* button.mp3 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +116,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52CB3A5D2F8E559900C793D6 /* button.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

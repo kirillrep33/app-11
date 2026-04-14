@@ -46,7 +46,7 @@ private struct StatsPeriodSegmentedControl: View {
                                 .strokeBorder(Color.black.opacity(0.04), lineWidth: selection == i ? max(0.5, fpScale(0.5, scale)) : 0)
                         )
                 }
-                .buttonStyle(.plain)
+                .buttonStyle(SteakSoundPlainButtonStyle())
             }
         }
         .padding(pad)

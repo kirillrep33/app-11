@@ -116,7 +116,7 @@ struct SmartTimerView: View {
             .background(vm.isFormReady ? Color(steakHex: "FFC107") : Color(steakHex: "A1887F"))
             .clipShape(Capsule())
         }
-        .buttonStyle(.plain)
+        .buttonStyle(SteakSoundPlainButtonStyle())
         .allowsHitTesting(vm.isFormReady)
     }
 
@@ -131,7 +131,7 @@ struct SmartTimerView: View {
                 .background(Color(steakHex: "FF5722"))
                 .clipShape(Capsule())
         }
-        .buttonStyle(.plain)
+        .buttonStyle(SteakSoundPlainButtonStyle())
     }
 
     private var meatCutSection: some View {
@@ -164,7 +164,7 @@ struct SmartTimerView: View {
                 }
             }
         }
-        .buttonStyle(.plain)
+        .buttonStyle(SteakSoundPlainButtonStyle())
     }
 
     private var expandedMeatCutPanel: some View {
@@ -184,7 +184,7 @@ struct SmartTimerView: View {
                         .font(.system(size: fpScale(12, scale), weight: .semibold))
                         .foregroundStyle(Color.white)
                 }
-                .buttonStyle(.plain)
+                .buttonStyle(SteakSoundPlainButtonStyle())
             }
             .padding(.horizontal, fpScale(12, scale))
             .padding(.top, fpScale(14, scale))
@@ -206,7 +206,7 @@ struct SmartTimerView: View {
                                 .frame(minHeight: fpScale(16, scale), alignment: .leading)
                                 .contentShape(Rectangle())
                         }
-                        .buttonStyle(.plain)
+                        .buttonStyle(SteakSoundPlainButtonStyle())
                     }
                 }
                 .padding(.horizontal, fpScale(12, scale))
@@ -257,7 +257,7 @@ struct SmartTimerView: View {
                 }
             }
         }
-        .buttonStyle(.plain)
+        .buttonStyle(SteakSoundPlainButtonStyle())
     }
 
     private var expandedDonenessPanel: some View {
@@ -277,7 +277,7 @@ struct SmartTimerView: View {
                         .font(.system(size: fpScale(12, scale), weight: .semibold))
                         .foregroundStyle(Color.white)
                 }
-                .buttonStyle(.plain)
+                .buttonStyle(SteakSoundPlainButtonStyle())
             }
             .padding(.horizontal, fpScale(12, scale))
             .padding(.top, fpScale(14, scale))
@@ -299,7 +299,7 @@ struct SmartTimerView: View {
                                 .frame(minHeight: fpScale(16, scale), alignment: .leading)
                                 .contentShape(Rectangle())
                         }
-                        .buttonStyle(.plain)
+                        .buttonStyle(SteakSoundPlainButtonStyle())
                     }
                 }
                 .padding(.horizontal, fpScale(12, scale))

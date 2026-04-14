@@ -41,7 +41,7 @@ struct SteakEmojiTripleSegment: View {
                             }
                         )
                 }
-                .buttonStyle(.plain)
+                .buttonStyle(SteakSoundPlainButtonStyle())
             }
         }
         .padding(pad)

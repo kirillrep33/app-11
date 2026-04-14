@@ -31,7 +31,7 @@ struct SteakPrimarySubmitButton: View {
             .background(isReady ? Color(steakHex: "FF5722") : Color(steakHex: "A1887F"))
             .clipShape(Capsule())
         }
-        .buttonStyle(.plain)
+        .buttonStyle(SteakSoundPlainButtonStyle())
         .animation(.easeInOut(duration: 0.2), value: isReady)
     }
 }

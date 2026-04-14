@@ -133,7 +133,7 @@ private struct ArchiveSegmentedPicker: View {
                         )
                         .contentShape(Rectangle())
                 }
-                .buttonStyle(.plain)
+                .buttonStyle(SteakSoundPlainButtonStyle())
             }
         }
         .padding(fpScale(2, scale))
@@ -288,7 +288,7 @@ private struct ArchiveFailureCardView: View {
                                 .strokeBorder(Color(steakHex: "4CAF50"), lineWidth: 0.5)
                         )
                     }
-                    .buttonStyle(.plain)
+                    .buttonStyle(SteakSoundPlainButtonStyle())
                 }
             }
             .padding(inset)
@@ -386,7 +386,7 @@ private struct ArchiveFailureSwipeRow: View {
                     .background(Color(steakHex: "D32F2F"))
                     .clipShape(RoundedRectangle(cornerRadius: fpScale(8, scale), style: .continuous))
             }
-            .buttonStyle(.plain)
+            .buttonStyle(SteakSoundPlainButtonStyle())
             .accessibilityLabel("Delete")
             .padding(.trailing, 0)
             .offset(x: fpScale(8, scale))
@@ -470,7 +470,7 @@ private struct ArchiveSuccessSwipeRow: View {
                     .background(Color(steakHex: "D32F2F"))
                     .clipShape(RoundedRectangle(cornerRadius: fpScale(8, scale), style: .continuous))
             }
-            .buttonStyle(.plain)
+            .buttonStyle(SteakSoundPlainButtonStyle())
             .accessibilityLabel("Delete")
             .padding(.trailing, 0)
             .offset(x: fpScale(8, scale))

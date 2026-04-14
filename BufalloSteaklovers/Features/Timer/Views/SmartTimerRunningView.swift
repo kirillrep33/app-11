@@ -69,7 +69,7 @@ struct SmartTimerRunningView: View {
                     .background(Color(steakHex: "3E2723"))
                     .clipShape(Capsule())
             }
-            .buttonStyle(.plain)
+            .buttonStyle(SteakSoundPlainButtonStyle())
 
             Spacer(minLength: 0)
 
@@ -128,7 +128,7 @@ struct SmartTimerRunningView: View {
                         .offset(x: isPlaying ? 0 : fpScale(2, scale))
                 }
             }
-            .buttonStyle(.plain)
+            .buttonStyle(SteakSoundPlainButtonStyle())
             .accessibilityLabel(isPlaying ? "Pause" : "Play")
 
             Button(action: onSkipStep) {
@@ -141,7 +141,7 @@ struct SmartTimerRunningView: View {
                         .foregroundStyle(Color(steakHex: "A1887F"))
                 }
             }
-            .buttonStyle(.plain)
+            .buttonStyle(SteakSoundPlainButtonStyle())
             .accessibilityLabel("Skip step")
         }
     }
@@ -192,6 +192,6 @@ struct SmartTimerRunningView: View {
                     .strokeBorder(Color(steakHex: "A1887F"), lineWidth: max(fpScale(0.3, scale), 0.5))
             )
         }
-        .buttonStyle(.plain)
+        .buttonStyle(SteakSoundPlainButtonStyle())
     }
 }

@@ -58,7 +58,7 @@ struct AnalyzeFailureView: View {
                             .font(.system(size: fpScale(16, scale), weight: .semibold))
                             .foregroundStyle(Color(steakHex: "FF5722"))
                     }
-                    .buttonStyle(.plain)
+                    .buttonStyle(SteakSoundPlainButtonStyle())
 
                     Text("Analyze Failure")
                         .font(.system(size: fpScale(20, scale), weight: .semibold))
@@ -174,7 +174,7 @@ struct AnalyzeFailureView: View {
                 }
             }
         }
-        .buttonStyle(.plain)
+        .buttonStyle(SteakSoundPlainButtonStyle())
     }
 
     private var expandedPrimaryPanel: some View {
@@ -194,7 +194,7 @@ struct AnalyzeFailureView: View {
                         .font(.system(size: fpScale(12, scale), weight: .semibold))
                         .foregroundStyle(Color.white)
                 }
-                .buttonStyle(.plain)
+                .buttonStyle(SteakSoundPlainButtonStyle())
             }
             .padding(.horizontal, fpScale(12, scale))
             .padding(.top, fpScale(14, scale))
@@ -215,7 +215,7 @@ struct AnalyzeFailureView: View {
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .contentShape(Rectangle())
                         }
-                        .buttonStyle(.plain)
+                        .buttonStyle(SteakSoundPlainButtonStyle())
                     }
                 }
                 .padding(.horizontal, fpScale(12, scale))
